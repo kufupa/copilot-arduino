@@ -1,16 +1,10 @@
-// Flight controller code
-// Using an stm32 blue pill
-// Using the STM32F103C8T6
-
-// All libraries
-#include <Arduino.h>
+// Using an MPU6050
+// Calculate angle that the IMU is facing
 
 // Wire library is required for I2C
 #include <Wire.h>
 #include <SPI.h>
 
-// Using an MPU6050
-// Calculate angle that the IMU is facing
 const int MPU6050_ADDRESS = 0x68;
 const int MPU6050_RA_ACCEL_XOUT_H = 0x3B;
 const int MPU6050_RA_GYRO_XOUT_H = 0x43;
@@ -81,20 +75,4 @@ void printIMU(){
     delay(100);
 }
 
-
-
-
-void setup(){
-    // Connect to the serial port
-    Serial.begin(9600);
-    // Setup the IMU
-    setupIMU();
-
-}
-
-
-void loop(){
-    // Print the IMU
-    printIMU();
-}
 
