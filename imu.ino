@@ -28,7 +28,8 @@ const int MPU6050_ACCEL_FS_4 = 0x01;
 const int MPU6050_ACCEL_FS_8 = 0x02;
 const int MPU6050_ACCEL_FS_16 = 0x03;
 
-void setupIMU(){
+void setupIMU()
+{
     Wire.begin();
     Wire.beginTransmission(MPU6050_ADDRESS);
     Wire.write(MPU6050_RA_PWR_MGMT_1);
@@ -44,7 +45,8 @@ void setupIMU(){
     Wire.endTransmission(true);
 }
 
-void printIMU(){
+void printIMU()
+{
     Wire.beginTransmission(MPU6050_ADDRESS);
     Wire.write(MPU6050_RA_ACCEL_XOUT_H);
     Wire.endTransmission(false);
@@ -74,5 +76,3 @@ void printIMU(){
     Serial.println();
     delay(100);
 }
-
-

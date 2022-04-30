@@ -8,7 +8,7 @@
 #include <Arduino.h>
 #include <Servo.h>
 // Wire library is required for I2C with mpu6050 (accelerometer and gyroscope)
-#include <Wire.h> 
+#include <Wire.h>
 #include <MPU6050.h>
 #include <SPI.h>
 
@@ -44,8 +44,8 @@ int16_t gx;
 int16_t gy;
 int16_t gz;
 
-
-void setupIMU(){ // This is copilot code i have no idea what it does
+void setupIMU()
+{ // This is copilot code i have no idea what it does
   Wire.begin();
   Wire.beginTransmission(MPU6050_ADDRESS);
   Wire.write(MPU6050_RA_PWR_MGMT_1);
@@ -61,7 +61,8 @@ void setupIMU(){ // This is copilot code i have no idea what it does
   Wire.endTransmission(true);
 }
 
-void printIMU(){ // This is also copilot code it looks so wrong 
+void printIMU()
+{ // This is also copilot code it looks so wrong
   Wire.beginTransmission(MPU6050_ADDRESS);
   Wire.write(MPU6050_RA_ACCEL_XOUT_H);
   Wire.endTransmission(false);
@@ -91,25 +92,16 @@ void printIMU(){ // This is also copilot code it looks so wrong
   Serial.println();
 }
 
-
-
-
-
-
-
-
-void setup(){
+void setup()
+{
   // Connect to the serial port for debugging
   Serial.begin(9600);
   // Setup the IMU
   setupIMU();
-
 }
 
-
-void loop(){
+void loop()
+{
   // Print the IMU
   printIMU();
 }
-
-

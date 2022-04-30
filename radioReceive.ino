@@ -4,15 +4,14 @@
 // Using the STM32F103C8T6
 //
 
-
 #include <Arduino.h>
 #include <SPI.h>
 #include <nRF24L01.h>
 
 // Pins connected to the nRF24L01+ and STM32
-// Enable the transmitter or receiver mode (CE pin) 
-const int nrf24_ce_pin = 9; 
-// Chip select (CSN pin) 
+// Enable the transmitter or receiver mode (CE pin)
+const int nrf24_ce_pin = 9;
+// Chip select (CSN pin)
 const int nrf24_csn_pin = 10;
 const int stm32_ce_pin = 8;
 const int stm32_csn_pin = 7;
@@ -37,11 +36,11 @@ const int nrf24_addr_width = 5;
 // const int stm32_spi_bit_order = MSBFIRST;
 // const int stm32_spi_data_mode = SPI_MODE0;
 
-
 // Variable string for data sent to the nRF24L01+
 char nrf24_data[nrf24_payload_size];
 
-void setup(){
+void setup()
+{
     // Initialise the nRF24L01+
     nRF24L01.init();
     nRF24L01.setChannel(nrf24_channel);
@@ -56,18 +55,19 @@ void setup(){
     pinMode(stm32_csn_pin, OUTPUT);
     digitalWrite(stm32_ce_pin, LOW);
     digitalWrite(stm32_csn_pin, HIGH);
-    
+
     // // Initialise the SPI
     // SPI.begin();
     // SPI.setBitOrder(stm32_spi_bit_order);
     // SPI.setDataMode(stm32_spi_data_mode);
     // SPI.setClockDivider(stm32_spi_speed);
-
 }
 
-void loop(){
+void loop()
+{
     // If data available from the nRF24L01+
-    if(nRF24L01.dataReady()){
+    if (nRF24L01.dataReady())
+    {
         // Read the data
         nRF24L01.read(nrf24_data, nrf24_payload_size);
         // Send the data to the STM32
@@ -76,8 +76,9 @@ void loop(){
         SPI.transfer(nrf24_data, nrf24_payload_size);
         digitalWrite(stm32_csn_pin, HIGH);
         digitalWrite(stm32_ce_pin, LOW);
-    } else {
-
+    }
+    else
+    {
     }
 
     // delay program to save power

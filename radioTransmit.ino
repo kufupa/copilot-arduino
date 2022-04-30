@@ -4,7 +4,6 @@
 // Using the STM32F103C8T6
 //
 
-
 #include <Arduino.h>
 #include <SPI.h>
 #include <nRF24L01.h>
@@ -30,11 +29,11 @@ const int nrf24_addr_width = 5;
 // const int stm32_spi_bit_order = MSBFIRST;
 // const int stm32_spi_data_mode = SPI_MODE0;
 
-
 // Variable string for data sent to the nRF24L01+
 char nrf24_data[nrf24_payload_size];
 
-void setup(){
+void setup()
+{
     // Initialise the nRF24L01+
     nRF24L01.init();
     nRF24L01.setChannel(nrf24_channel);
@@ -49,16 +48,16 @@ void setup(){
     pinMode(stm32_csn_pin, OUTPUT);
     digitalWrite(stm32_ce_pin, LOW);
     digitalWrite(stm32_csn_pin, HIGH);
-    
+
     // Initialise the SPI
     SPI.begin();
     SPI.setBitOrder(stm32_spi_bit_order);
     SPI.setDataMode(stm32_spi_data_mode);
     SPI.setClockDivider(stm32_spi_speed);
-
 }
 
-void sendData(char[nrf24_payload_size] data){
+void sendData(char[nrf24_payload_size] data)
+{
     // Send data to the nRF24L01+
     nRF24L01.send(data, nrf24_payload_size);
 
@@ -81,11 +80,9 @@ void sendData(char[nrf24_payload_size] data){
 
 // }
 
-void loop(){
+void loop()
+{
 
     // Send data to the nRF24L01+
     nRF24L01.send(nrf24_data, nrf24_payload_size);
-
 }
-
-
