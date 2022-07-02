@@ -1,0 +1,69 @@
+Joop regular quad:
+YES - 4 x 1000kV motor / 10x4.5 props / ESC combo
+YES - 1 x STM32F103C8T6
+YES - 1 x MPU-6050 gyro / accelerometer
+YES - 1 x Glass fiber prototyping PCB
+YES - 1 x 3mm LEDs, red, yellow, green
+1 x frame
+1 x power distribution board
+1 x 3S / 2200mAh / 30C lipo
+1 x Battery XT60 connector
+1 x Flysky FS-T6 6-CH TX Transmitter
+1 x 2S/3S lipo battery charger
+1 x 1/4W Ceramic metal film resistors set (600 PCS)
+
+Joop AUTONOMOUS quad:
+3.1 The flight controller
+1 x GPS module with integrated HMC5883L compass
+1 x Flysky FS-i6X transmitter with IA6B Receiver
+1 x 1/4W Ceramic metal film resistors set (600 PCS)
+
+3.2 The frame
+1 x 450 size frame with integrated power distribution board
+1 x 3S / 2200mAh / 30C lipo
+1 x Battery XT60 connector
+1 x 2S/3S lipo battery charger
+
+3.3 The telemetry system
+1 x LCD breakout board with buttons
+
+Rando list: 
+https://docs.google.com/spreadsheets/d/1_TDdE53Ny_vJOg7E2sSKXvxeMJKlnYIYT_NXItUonxY/edit#gid=0
+Frame
+Motors
+Props
+ESC
+FC
+Camera
+VTX
+Antenna
+Radio
+Receiver
+Goggles
+Battery
+Battery Charger
+Zipties, strap, etc
+
+
+Instructables:
+https://www.instructables.com/How-to-Build-a-Rc-Drone-and-the-Transmitter-Using-/
+Supplies
+We need thes items to make the drone,
+
+For the drone-
+Frame
+Motors – Provide thrust, brushless DC motors, each separately controlled by an ESC
+ESCs – Electronic Speed Controller, regulates how much power the motors get, connected to FC
+Propellers – 5-inch racing props for less thrust but more speed, 9-11 inch props for stable, aerial photography flights 
+Battery – 2S, 3S, 4S, etc, S = voltage, more S = more speed
+FC - STM32F103C8T6
+IMU (MPU 6050) – Various sensors that help your quad know where it is
+
+For the transmitter-
+NRF24L01 Transceiver Module
+NRF24L01 + PA + LNA
+Potentiometer
+Servo Motor
+Toggle Switch
+Joystick
+Arduino Pro Mini
