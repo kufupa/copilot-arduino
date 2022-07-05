@@ -1,41 +1,48 @@
-/*
+# Overall goals for drone:
 
-Overall goals for drone:
->Lift off
->Stabilisation
->Movement
+> Lift off
+> Stabilisation
+> Movement
+
     -Pre-programmed
     -Radio control
     -Autonomous
->Landing
 
+> Landing
 
 Other considerations:
->Safety
+
+> Safety
+
     -Prevent crashing
     -Manual shut down button
     -Prevent battery dying
     -Auto return to home
 
-
 Hardware:
->Flight controller - STM32F103C8T6
->IMU - MPU6050
->Radio - nrf24l01
->GPS - No clue
->Camera:
+
+> Flight controller - STM32F103C8T6
+> IMU - MPU6050
+> Radio - nrf24l01
+> GPS - No clue
+> Camera:
+
     - Microcomputer (i.e rPi) - image detection
     - Radio FPV - live feed
     - Cinematic - high res video recording
->Surroundings sensor:
+
+> Surroundings sensor:
+
     -Lidar / Sonar
     -Ultrasonic
     -Infrared
     -Visible (rpi?)
 
 > Wires
+
     - Soldering
     - Breadboard testing
+
 > PCB
 
 > Motors
@@ -44,8 +51,7 @@ Hardware:
 
 > Frame
 
-
-Cost:       (Assume bought from aliexpress, else state)
+Cost: (Assume bought from aliexpress, else state)
 
 FC ~ 5
 IMU ~ 6
@@ -64,9 +70,3 @@ ESCs ~
 Battery ~
 
 Frame ~
-
-
-
-
-
-*/
