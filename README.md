@@ -2,15 +2,15 @@
 
 ###Use plans.md to document ideas / what's been ordered / who doing what
 
-Overall goals for drone:
+## Overall goals for drone:
 
 - Lift off
 - Stabilisation
 - Movement
 
-  -Pre-programmed
-  -Radio control
-  -Autonomous
+  1. Pre-programmed
+  2. Radio control
+  3. Autonomous
 
 - Landing
 
@@ -18,10 +18,10 @@ Other considerations:
 
 - Safety
 
-  -Prevent crashing
-  -Manual shut down button
-  -Prevent battery dying
-  -Auto return to home
+  1.Prevent crashing
+  2.Manual shut down button
+  3.Prevent battery dying
+  4.Auto return to home
 
 Hardware:
 
@@ -67,10 +67,40 @@ Rpi ~ 20 (Amazon)
 Surroundings sensor ~
 
 Wires ~
-PCB ~
+PCB ~ 3.5
 
-Motors ~
-ESCs ~
-Battery ~
+Motors, ESC's combo ~ 44
+Propellors ~ 2.50
+Frame ~ 18
 
-Frame ~
+Lipo Battery ~ 22 (2 pack) (Amazon)
+Battery charger ~ 17 (Amazon)
+Power Distribution board (PDB) ~ 4.50
+
+##TODO:
+
+1. Choose & order GPS
+2. Control motors using uno
+3. Calibrate IMU
+4. Bidirectional radio communication test
+5. PID algo for stabilisation using IMU
+6. PID for movement
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
