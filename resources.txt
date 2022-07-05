@@ -1,0 +1,20 @@
+FC software:
+https://programmersought.com/article/67975181036/, https://github.com/cleanflight/cleanflight/issues/205, https://github.com/englebert/cleanflight-lite - FLIGHT CONTROLLER SOFTWARE FOR OUR FC
+
+https://hackaday.com/2021/06/23/test-your-blue-pill-board-for-a-genuine-stm32f103c8-mcu/
+
+the lord:
+http://www.brokking.net/ymfc-32_auto_main.html - THE GOD JOOP BROKKING
+
+Battery details:
+https://www.amazon.co.uk/Battery-1350mAh-Airplane-Quadcopter-Helicopter/dp/B09WDJY9PH/
+https://www.amazon.co.uk/Haisito-Charger-Battery-100-240V-Quadcopter/dp/B07WGZ5HQK/
+
+RC:
+https://forum.arduino.cc/t/how-to-remotely-control-your-arduino-with-a-2-4ghz-controller-with-less-then-12/371745/20
+
+
+PID controller:
+http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+
+
